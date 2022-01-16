@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.app-main {
+  background-image: url(./assets/app-background-image.jpg);
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.current-weather h2, 
+.current-weather p{
+  font-family: "Bebas Neue";
+}
+
+form {
+  width: 265px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-top: 10px;
+}
+
+form input,
+button,
+label {
+  width: 75%;
+  margin: 0 auto;
+}
+
+form input[type="text"] {
+  font-family: "Montserrat";
+  font-size: 0.8em;
+}
+
+input::placeholder {
+  font-family: "Montserrat";
+  font-size: 0.75em;
+}
+
+.weatherSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+button {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: whitesmoke;
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  transition: 0.4s ease-in-out;
+}
+
+footer {
+  background-color: black;
+  height: 10vh;
+}
+
+.footer-credit,
+.juno-credit{
+  color: whitesmoke;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.juno-credit{
+    padding-top: 1em;
+}
