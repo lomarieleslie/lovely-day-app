@@ -2,7 +2,7 @@ import axios from 'axios';
 import {useState} from 'react';
 import './App.css';
 // import ToDoList from './components/ToDoList';
-import {FaLinkedin} from 'react-icons/fa';
+// import {FaLinkedin} from 'react-icons/fa';
 
 
 function WeatherApp() {
@@ -76,7 +76,7 @@ function WeatherApp() {
             href="https://www.linkedin.com/in/lorrainemleslie/"
             target="_blank"
 >
-            <p className='footer-credit'>Lorraine Leslie <FaLinkedin /></p>
+            <p className='footer-credit'>Lorraine Leslie </p>
           
           </a>
     </footer>
