@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {useState} from 'react';
 import './App.css';
-import ToDoList from './components/ToDoList';
+// import ToDoList from './components/ToDoList';
 import {FaLinkedin} from 'react-icons/fa';
 
 
