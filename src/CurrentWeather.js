@@ -26,7 +26,7 @@ function WeatherApp() {
 
   const handleSubmit = (event) => {
     axios({
-      url: 'http://api.openweathermap.org/data/2.5/weather?id=524901&appid=fe5993bb7858caa6305894d3bb245e56',
+      url: 'https://api.openweathermap.org/data/2.5/weather?id=524901&appid=fe5993bb7858caa6305894d3bb245e56',
       method: 'GET',
       dataResponse: 'json',
       params: {
@@ -41,7 +41,6 @@ function WeatherApp() {
     event.preventDefault();
     setSearchTerm(userInput);
     setUserInput('');
-    
   } 
 
   return (
