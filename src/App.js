@@ -2,7 +2,7 @@
 import './App.css';
 import WeatherApp from './CurrentWeather.js';
 import ToDoApp from './toDoApp';
-import {FaLinkedin} from 'react-icons/fa';
+// import {FaLinkedin} from 'react-icons/fa';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
             href="https://www.linkedin.com/in/lorrainemleslie/"
             target="_blank"
 >
-            <p className='footer-credit'>Lorraine Leslie <FaLinkedin /></p>
+            <p className='footer-credit'>Lorraine Leslie </p>
           
           </a>
     </footer>
