@@ -67,9 +67,9 @@ function ToDoApp() {
     <div>
      
       <form action="submit" onSubmit={handleSubmit}>
-        <label htmlFor="newBook">What dreams have you for your day?</label>
+        <label htmlFor="newBook">To Do:</label>
         <input type="text" id="newToDo" onChange={handleInput} value={userInput}/>
-        <button>Add Dream</button>
+        <button>Add To Do</button>
       </form> 
       
         {toDos.map((toDo)=>{
