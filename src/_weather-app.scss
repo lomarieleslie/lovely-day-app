@@ -15,11 +15,11 @@
   font-family: "Bebas Neue";
 }
 
-form {
+.weather-app-form {
   width: 265px;
 }
 
-form {
+.weather-app-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,14 +27,14 @@ form {
   padding-top: 10px;
 }
 
-form input,
+.weather-app-form input,
 button,
 label {
   width: 75%;
   margin: 0 auto;
 }
 
-form input[type="text"] {
+.weather-app-form input[type="text"] {
   font-family: "Montserrat";
   font-size: 0.8em;
 }
