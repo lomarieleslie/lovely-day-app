@@ -59,7 +59,7 @@ function WeatherApp() {
 
          <div className='current-weather'>
            <h2 className='current-weather-element'>{currentWeather.name}</h2>
-           <img className='current-weather-element' src={`http://openweathermap.org/img/w/${currentWeather.weather[0].icon}.png`} alt={currentWeather.weather[0].description}/>
+           <img className='current-weather-element' src={`https://openweathermap.org/img/w/${currentWeather.weather[0].icon}.png`} alt={currentWeather.weather[0].description}/>
            <p className='current-weather-element'>{Math.floor(currentWeather.main.temp)}&deg;C</p>
            <p className='current-weather-element'>{currentWeather.weather[0].description}</p>
          </div>
