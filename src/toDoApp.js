@@ -1,92 +1,89 @@
-import React, {useState, useEffect} from "react";
-import {getDatabase, ref, onValue, push, remove} from 'firebase/database';
+import React, { useState, useEffect } from "react";
+import { getDatabase, ref, onValue, push, remove } from "firebase/database";
 import toDoApp from "./firebaseSetup";
 
-
 function ToDoApp() {
+  // initialize state and variables to hold users dreams for their day as well as input
+  const [toDos, setToDos] = useState([]);
+  const [userInput, setUserInput] = useState("");
 
-    // initialize state and variables to hold users dreams for their day as well as input
-    const [toDos, setToDos] = useState([]);
-    const [userInput, setUserInput] = useState('');
+  // creating an eventHandler that will run when user types in the input field
+  const handleInput = (event) => {
+    setUserInput(event.target.value);
+  };
 
-    // creating an eventHandler that will run when user types in the input field
-    const handleInput = (event) => {
-        setUserInput(event.target.value);
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const database = getDatabase(toDoApp);
 
-        const database = getDatabase(toDoApp);
+    const dbRootAddress = ref(database);
 
-        const dbRootAddress = ref(database);
+    push(dbRootAddress, userInput);
 
-        push(dbRootAddress, userInput);
+    setUserInput("");
+  };
 
-        
+  const handleRemove = (toDoId) => {
+    const database = getDatabase(toDoApp);
 
-        setUserInput('');
+    const dbtoDoAddress = ref(database, `${toDoId}`);
 
-    };
+    remove(dbtoDoAddress);
+  };
 
-    const handleRemove = (toDoId) => {
+  useEffect(() => {
+    const database = getDatabase(toDoApp);
 
-      const database = getDatabase(toDoApp);
+    const dbRootAddress = ref(database);
 
-      const dbtoDoAddress = ref(database, `${toDoId}`);
+    onValue(dbRootAddress, (response) => {
+      const newTodo = [];
 
-      remove(dbtoDoAddress);
+      const data = response.val();
 
-    }
+      for (let key in data) {
+        newTodo.push({ key: key, name: data[key] });
+      }
 
-    useEffect( () => {
+      setToDos(newTodo);
+    });
+  }, []);
 
-      const database = getDatabase(toDoApp);
-
-      const dbRootAddress = ref(database);
-
-      onValue(dbRootAddress, (response) => {
-        const newTodo = []
-
-        const data = response.val();
-
-        for (let key in data) {
-          newTodo.push({key: key, name: data[key]})
-        }
-
-        setToDos(newTodo);
-
-      })
-
-    }, []);
-
-
-
-// Display To-Do List
+  // Display To-Do List
   return (
     <div>
-     
       <form action="submit" onSubmit={handleSubmit}>
         <label htmlFor="newBook">To Do:</label>
-        <input type="text" id="newToDo" onChange={handleInput} value={userInput}/>
+        <input
+          type="text"
+          id="newToDo"
+          onChange={handleInput}
+          value={userInput}
+        />
         <button>Add To Do</button>
-      </form> 
-      
-        {toDos.map((toDo)=>{
-          return (
-<ul>
+      </form>
+
+      {toDos.map((toDo) => {
+        return (
+          <ul>
             <li key={toDo.key}>
               <p>{toDo.name}</p>
-              <button className="add-toDo" onClick={()=>{handleRemove(toDo.key)}}> Done </button>
+              <button
+                className="add-toDo"
+                onClick={() => {
+                  handleRemove(toDo.key);
+                }}
+              >
+                {" "}
+                Done{" "}
+              </button>
             </li>
-           </ul> )
-        })}
-    
+          </ul>
+        );
+      })}
     </div>
   );
-
-
-
 }
 
 export default ToDoApp;
