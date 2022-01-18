@@ -20,12 +20,12 @@ function App() {
      </main>
 
       <footer>
-      <a className='juno-credit' href="https://junocollege.com/" target={'_blank'}
+      <a className='juno-credit' href="https://junocollege.com/" target={'_blank'} rel='noopener'
         ><p className='juno-credit'>Created at © Juno College by:</p></a>
           
           <a className='footer-credit'
             href="https://www.linkedin.com/in/lorrainemleslie/"
-            target={'_blank'}
+            target={'_blank'} rel='noopener'
 >
             <p className='footer-credit'>Lorraine Leslie </p>
           
