@@ -3,7 +3,6 @@ import {useState} from 'react';
 import './App.css';
 
 
-
 function WeatherApp() {
 
 
@@ -14,7 +13,7 @@ function WeatherApp() {
   // DECLARED CONSTANT VARIABLES
   const [currentWeather, setCurrentWeather] = useState([]);
   const [userInput, setUserInput] = useState('');
-  const [searchTerm, setSearchTerm] = useState(''); 
+  const [setSearchTerm] = useState(''); 
 
 
 
@@ -40,7 +39,6 @@ function WeatherApp() {
     event.preventDefault();
     setSearchTerm(userInput);
     setUserInput('');
-    
   } 
 
   return (
@@ -62,6 +60,7 @@ function WeatherApp() {
          </div>
     
      )}
+      
     </div>
   );
 }
