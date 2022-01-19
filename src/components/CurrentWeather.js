@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {useState} from 'react';
-import './App.css';
 
 
 function WeatherApp() {
@@ -18,7 +17,6 @@ function WeatherApp() {
 
 
   const handleInput = (event) => {
-    // console.log('is this working?', event.target.value);
     setUserInput(event.target.value)
   }
 
@@ -33,7 +31,6 @@ function WeatherApp() {
         units: 'metric'
       }
     }).then((response) => {
-      console.log(response.data.name);
       setCurrentWeather(response.data);
     });
     event.preventDefault();
@@ -46,8 +43,8 @@ function WeatherApp() {
         
      <form className='weather-app-form'onSubmit={handleSubmit}>
        <label htmlFor="search">Search for your city here:</label>
-       <input type="text" placeholder='Where you at?'id="search" onChange={handleInput} value={userInput} />
-       <button className="weather-search">Search</button>
+       <input type="text" placeholder='Where you at?'id="search" onChange={handleInput} value={userInput} required/>
+       <button className="location-search-button">Search</button>
      </form>
      
      {currentWeather.weather && (
@@ -60,6 +57,8 @@ function WeatherApp() {
          </div>
     
      )}
+
+     
       
     </div>
   );

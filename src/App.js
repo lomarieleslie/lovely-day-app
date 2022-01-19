@@ -1,37 +1,32 @@
 
 import './App.css';
-import WeatherApp from './CurrentWeather.js';
-import ToDoApp from './toDoApp';
-// import {FaLinkedin} from 'react-icons/fa';
+import WeatherApp from './components/CurrentWeather.js';
+import ToDoApp from './components/toDoApp';
+import { FaLinkedin } from 'react-icons/fa';
 
 function App() {
 
   return (
     <div className="App">
-
-       <main className='app-main'>
-        <div className='title'><h1>Lovely Day</h1><p className='title-p'>what are your dreams for today?</p></div>
-        <article className='weatherSection'>
+         <header>
+           <div className='title'><h1>Lovely Day</h1><p className='title-p'>what are your dreams for today?</p></div>
+         </header>
+        <main className='app-main'>
+        <article className='weather-section'>
           <WeatherApp />
         </article>
-        <article>
+        <article className='to-do-app'>
           <ToDoApp />
         </article>
      </main>
-
       <footer>
-      <a className='juno-credit' href="https://junocollege.com/" target={'_blank'} rel='noreferrer'
-        ><p className='juno-credit'>Created at © Juno College by:</p></a>
-          
-          <a className='footer-credit'
-            href="https://www.linkedin.com/in/lorrainemleslie/"
-            target={'_blank'} rel='noreferrer'
->
-            <p className='footer-credit'>Lorraine Leslie </p>
-          
+      <a className='juno-credit' href="https://junocollege.com/" target={'_blank'} rel='noreferrer'>
+        <p className='juno-credit'>Created at © Juno College by:</p></a>
+          <a className='footer-credit' href="https://www.linkedin.com/in/lorrainemleslie/"
+            target={'_blank'} rel='noreferrer'>
+            <p className='footer-credit'>Lorraine Leslie <FaLinkedin /></p>
           </a>
-    </footer>
-      
+    </footer> 
     </div>
   );
 }
