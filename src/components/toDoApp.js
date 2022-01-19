@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getDatabase, ref, onValue, push, remove } from "firebase/database";
-import toDoApp from "./firebaseSetup";
+import toDoApp from "../firebaseSetup";
 
 function ToDoApp() {
   // initialize state and variables to hold users dreams for their day as well as input
@@ -54,21 +54,22 @@ function ToDoApp() {
   return (
     <div>
       <form action="submit" onSubmit={handleSubmit}>
-        <label htmlFor="newBook">To Do:</label>
+        <label className="to-do-label" htmlFor="newToDo">To Do:</label>
+        <button>Add To Do</button>
         <input
           type="text"
           id="newToDo"
           onChange={handleInput}
-          value={userInput}
+          value={userInput} required
         />
-        <button>Add To Do</button>
+        
       </form>
 
       {toDos.map((toDo) => {
         return (
           <ul>
-            <li key={toDo.key}>
-              <p>{toDo.name}</p>
+            <li className="to-do-item" key={toDo.key}>
+              <p className="to-do-item">{toDo.name}</p>
               <button
                 className="add-toDo"
                 onClick={() => {
@@ -76,7 +77,7 @@ function ToDoApp() {
                 }}
               >
                 {" "}
-                Done{" "}
+                Remove{" "}
               </button>
             </li>
           </ul>

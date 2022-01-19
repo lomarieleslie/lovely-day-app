@@ -3,15 +3,15 @@
 }
 
 .app-main {
-  background-image: url(./assets/app-background-image.jpg);
+  background-image: url(./assets/gradienta-zb01fkevaC0-unsplash.jpg);
   height: 90vh;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.current-weather h2, 
-.current-weather p{
+.current-weather h2,
+.current-weather p {
   font-family: "Bebas Neue";
 }
 
@@ -28,7 +28,7 @@
 }
 
 .weather-app-form input,
-button,
+.location-search-button,
 label {
   width: 75%;
   margin: 0 auto;
@@ -44,7 +44,7 @@ input::placeholder {
   font-size: 0.75em;
 }
 
-.weatherSection {
+.weather-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@ label {
   text-transform: uppercase;
 }
 
-button {
+.location-search-button {
   font-family: "Montserrat";
   text-transform: uppercase;
   font-size: 0.8em;
@@ -65,7 +65,7 @@ button {
   border-radius: 8px;
 }
 
-button:hover {
+.location-search-button:hover {
   color: black;
   background-color: whitesmoke;
   border: 2px solid black;
@@ -78,12 +78,12 @@ footer {
 }
 
 .footer-credit,
-.juno-credit{
+.juno-credit {
   color: whitesmoke;
   font-family: "Montserrat";
   text-decoration: none;
 }
 
-.juno-credit{
-    padding-top: 1em;
+.juno-credit {
+  padding-top: 1em;
 }
