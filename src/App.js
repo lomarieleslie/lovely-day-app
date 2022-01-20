@@ -11,9 +11,10 @@ function App() {
   return (
     <div className="App">
          <header>
-           <div className='title'><h1>Lovely Day</h1><p className='title-p'>what are your dreams for today?</p></div>
+           <div className='title'><h1>Lovely Day</h1><p className='title-p'>Day Planner</p></div>
          </header>
         <main className='app-main'>
+          <h2>but first, what's it like outside?</h2>
         <article className='weather-section'>
           <WeatherApp />
         </article>

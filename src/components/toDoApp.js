@@ -55,7 +55,7 @@ function ToDoApp() {
     <div>
       <form action="submit" onSubmit={handleSubmit}>
         <label className="to-do-label" htmlFor="newToDo">Make a to-do list:</label>
-        <div className="to-do-input-button-flex"> <button>Add To Do</button>
+        <div className="to-do-input-button-flex"> <button className="add-to-do-button">Add To Do</button>
         <input
           type="text"
           id="newToDo" placeholder="Add to-do here"
@@ -72,13 +72,13 @@ function ToDoApp() {
             <li className="to-do-item" key={toDo.key}>
               <div className="to-do-item-and-button"><p className="to-do-item">{toDo.name}</p>
               <button
-                className="add-toDo"
+                className="remove-toDo"
                 onClick={() => {
                   handleRemove(toDo.key);
                 }}
               >
                 {" "}
-                Remove{" "}
+               x{" "}
               </button></div>
               
             </li>
