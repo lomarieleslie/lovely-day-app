@@ -1,7 +1,9 @@
 
 import './App.css';
+
 import WeatherApp from './components/CurrentWeather.js';
 import ToDoApp from './components/toDoApp';
+import InspirationalPhoto from './components/InspirationalImage';
 import { FaLinkedin } from 'react-icons/fa';
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
         <article className='weather-section'>
           <WeatherApp />
         </article>
+        {/* <article>
+          {/* <InspirationalPhoto /> 
+        </article> */}
         <article className='to-do-app'>
           <ToDoApp />
         </article>

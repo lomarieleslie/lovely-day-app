@@ -1,16 +1,26 @@
 .to-do-app {
-    padding: 15px;
+    margin-top: 25px;
+    padding: 30px 0;
     display: flex;
     gap: 25px;
     flex-direction: column;
     max-height: 200px;
     overflow-y: scroll;
     background-color:black;
+    max-height: 900px;
 
+}
+
+.to-do-input-button-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
 }
 
 .to-do-label {
     color: whitesmoke;
+    display: block;
+    padding-bottom: 30px;
 }
 
 .add-toDo {
@@ -23,3 +33,10 @@
     font-family: 'Montserrat';
     color: whitesmoke;
 }
+
+.to-do-item-and-button {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+}
+

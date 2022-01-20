@@ -54,14 +54,15 @@ function ToDoApp() {
   return (
     <div>
       <form action="submit" onSubmit={handleSubmit}>
-        <label className="to-do-label" htmlFor="newToDo">To Do:</label>
-        <button>Add To Do</button>
+        <label className="to-do-label" htmlFor="newToDo">Make a to-do list:</label>
+        <div className="to-do-input-button-flex"> <button>Add To Do</button>
         <input
           type="text"
-          id="newToDo"
+          id="newToDo" placeholder="Add to-do here"
           onChange={handleInput}
           value={userInput} required
-        />
+        /></div>
+       
         
       </form>
 
@@ -69,7 +70,7 @@ function ToDoApp() {
         return (
           <ul>
             <li className="to-do-item" key={toDo.key}>
-              <p className="to-do-item">{toDo.name}</p>
+              <div className="to-do-item-and-button"><p className="to-do-item">{toDo.name}</p>
               <button
                 className="add-toDo"
                 onClick={() => {
@@ -78,7 +79,8 @@ function ToDoApp() {
               >
                 {" "}
                 Remove{" "}
-              </button>
+              </button></div>
+              
             </li>
           </ul>
         );
