@@ -1,18 +1,8 @@
-.App {
-  text-align: center;
-}
 
-.app-main {
-  background-image: url(./assets/gradienta-zb01fkevaC0-unsplash.jpg);
-  height: 85vh;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .current-weather h2,
 .current-weather p {
-  font-family: "Bebas Neue";
+  font-family: "Caudex";
 }
 
 .weather-app-form {
@@ -24,7 +14,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5em;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .weather-app-form input,
@@ -33,10 +23,16 @@ label {
   margin: 0 auto;
 }
 
+img.current-weather-element {
+ width: 75px;
+}
+
+
 
 .weather-app-form input[type="text"] {
   font-family: "Montserrat";
-  font-size: 0.8em;
+  background-color: rgba(245, 245, 245, 0.75);
+  border: 1px solid black;
 }
 
 input::placeholder {
@@ -45,6 +41,7 @@ input::placeholder {
 }
 
 .weather-section {
+  padding-right:15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +49,6 @@ input::placeholder {
 
 .label-for-weather-search {
   font-family: "Bebas Neue";
-  text-transform: uppercase;
   width: 200px;
 }
 
@@ -60,10 +56,10 @@ input::placeholder {
   margin-bottom: 20px;
   font-size: .8em;
   font-weight: 200;
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
   letter-spacing: 1px;
-  padding: 10px 0px;
+  padding: 5px 5px;
   outline: 0;
   border: 1px solid black;
   cursor: pointer;

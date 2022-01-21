@@ -2,6 +2,7 @@ import axios from 'axios';
 import {useState} from 'react';
 
 
+
 function WeatherApp() {
 
 
@@ -32,7 +33,9 @@ function WeatherApp() {
       }
     }).then((response) => {
       setCurrentWeather(response.data);
-    });
+    }).catch((error) => {
+      console.log(error);
+    })
     event.preventDefault();
     setSearchTerm(userInput);
     setUserInput("");

@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.app-main {
+  background-image: url(./assets/gradienta-P7KnvzCYDEQ-unsplash.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inspirational-image img {
+  padding-top: 20px;
+  width: 95%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/MBsJ0FR5EvgqvUQwS2/giphy.gif);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5em;
+  background-position: center;
+  background-size: contain;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  padding: 10px;
+}
+
+.title {
+  background-color: black;
+  padding: 10px 0;
+  margin: auto 0;
+}
+
+.title-p {
+  font-family: "Bebas Neue";
+  color: whitesmoke;
+  letter-spacing: 0.25em;
+}
+
+footer {
+  background-color: rgb(47, 105, 107);
+  height: 10vh;
+}
+
+.footer-credit,
+.juno-credit {
+  color: whitesmoke;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.juno-credit {
+  padding-top: 1em;
+}

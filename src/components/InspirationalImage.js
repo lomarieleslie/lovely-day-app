@@ -9,7 +9,7 @@ const [photo, setPhoto] = useState([]);
 
   useEffect(() => {
     axios({
-      url: "https://api.unsplash.com/collections/9497819/photos",
+      url: "https://api.unsplash.com/photos/random",
       method: "GET",
       dataResponse: 'json',
       params: {
@@ -19,9 +19,8 @@ const [photo, setPhoto] = useState([]);
         client_id: "W57PpYfHVnQtbqOYYceME-F10pLEm_rvyHvhyhwC1a8"
       } 
     }).then((response) => {
-     console.log(response.data[0].urls.small)
-     
-     setPhoto(response.data[0].urls.small);
+      console.log(response);
+     setPhoto(response.data.urls.small);
 
     }).catch((error) => {
       console.log(error);
@@ -31,9 +30,9 @@ const [photo, setPhoto] = useState([]);
   },[]);
 
   return (
-      <div>
+      <div className="inspirational-image">
 
-         <setPhoto />
+         <img src={photo} alt='inspirational image' />
 
       </div>
   )

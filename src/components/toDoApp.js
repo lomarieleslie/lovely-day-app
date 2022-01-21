@@ -52,12 +52,12 @@ function ToDoApp() {
 
   // Display To-Do List
   return (
-    <div>
+    <div className="to-do-app-container">
       <form action="submit" onSubmit={handleSubmit}>
         <label className="to-do-label" htmlFor="newToDo">Make a to-do list:</label>
         <div className="to-do-input-button-flex"> <button className="add-to-do-button">Add To Do</button>
         <input
-          type="text"
+          className="to-do-input" type="text"
           id="newToDo" placeholder="Add to-do here"
           onChange={handleInput}
           value={userInput} required
