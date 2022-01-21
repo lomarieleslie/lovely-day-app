@@ -16,7 +16,7 @@ function WeatherApp() {
   const [setSearchTerm] = useState(''); 
 
 
-
+// Create event handler with API call to get user current weather for their location:
   const handleInput = (event) => {
     setUserInput(event.target.value)
   }
@@ -40,7 +40,7 @@ function WeatherApp() {
     setSearchTerm(userInput);
     setUserInput("");
   } 
-
+// Rendering Current location, temperature and weather conditions 
   return (
     <div className="App">
         
