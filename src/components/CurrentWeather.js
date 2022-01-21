@@ -40,7 +40,7 @@ function WeatherApp() {
     setSearchTerm(userInput);
     setUserInput("");
   } 
-// Rendering Current location, temperature and weather conditions 
+// Rendering Current location, temperature and weather conditions upon submit on form, results show based on user input
   return (
     <div className="App">
         
