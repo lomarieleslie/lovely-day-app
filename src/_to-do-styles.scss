@@ -1,25 +1,80 @@
 .to-do-app {
-    padding: 15px;
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    max-height: 200px;
-    overflow-y: scroll;
-    background-color:black;
+  padding: 50px 0;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 300px;
+}
 
+.to-do-input-button-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin: 0 auto;
 }
 
 .to-do-label {
-    color: whitesmoke;
+  color: black;
+  display: block;
+  font-family: "Bebas Neue";
+  font-size: larger;
+  letter-spacing: 0.25em;
+  padding-bottom: 30px;
 }
 
-.add-toDo {
-    width: 25%;
+.to-do-input {
+  background-color: rgba(245, 245, 245, 0.75);
+  border: 1px solid black;
+  padding-left: 10px;
+}
+
+.remove-toDo {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 10%;
+}
+
+.remove-toDo:hover {
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
 }
 
 .to-do-item {
-    list-style: none;
-    display: flex;
-    font-family: 'Montserrat';
-    color: whitesmoke;
+  list-style: none;
+  display: flex;
+  font-family: "Montserrat";
+  color: black;
+}
+
+.to-do-item-and-button {
+  padding-top: 20px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 20px;
+  width: 350px;
+}
+
+.add-to-do-button {
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.add-to-do-button:hover {
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }

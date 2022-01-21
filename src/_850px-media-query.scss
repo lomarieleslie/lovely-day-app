@@ -1,0 +1,43 @@
+@media (min-width: 850px) {
+  .app-main {
+    height: 100vh;
+  }
+
+  .weather-section {
+    position: absolute;
+    top: 175px;
+    right: 0;
+    padding-right: 10%;
+  }
+
+  .weather-app-form input {
+    width: 75%;
+  }
+
+  .to-do-app {
+    position: relative;
+    width: 60%;
+    padding-left: 35px;
+  }
+
+  .to-do-button-flex {
+    justify-content: space-evenly;
+  }
+
+  .to-do-app-container {
+    width: 75%;
+  }
+
+  .to-do-item-and-button {
+    padding-left: 10px;
+  }
+
+  .inspirational-image {
+    width: 60%;
+  }
+
+  .inspirational-image img {
+    width: 80%;
+    height: 400px;
+  }
+}

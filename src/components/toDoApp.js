@@ -52,16 +52,17 @@ function ToDoApp() {
 
   // Display To-Do List
   return (
-    <div>
+    <div className="to-do-app-container">
       <form action="submit" onSubmit={handleSubmit}>
-        <label className="to-do-label" htmlFor="newToDo">To Do:</label>
-        <button>Add To Do</button>
+        <label className="to-do-label" htmlFor="newToDo">Make a to-do list:</label>
+        <div className="to-do-input-button-flex"> <button className="add-to-do-button">Add To Do</button>
         <input
-          type="text"
-          id="newToDo"
+          className="to-do-input" type="text"
+          id="newToDo" placeholder="Add to-do here"
           onChange={handleInput}
           value={userInput} required
-        />
+        /></div>
+       
         
       </form>
 
@@ -69,16 +70,17 @@ function ToDoApp() {
         return (
           <ul>
             <li className="to-do-item" key={toDo.key}>
-              <p className="to-do-item">{toDo.name}</p>
+              <div className="to-do-item-and-button"><p className="to-do-item">{toDo.name}</p>
               <button
-                className="add-toDo"
+                className="remove-toDo"
                 onClick={() => {
                   handleRemove(toDo.key);
                 }}
               >
                 {" "}
-                Remove{" "}
-              </button>
+               x{" "}
+              </button></div>
+              
             </li>
           </ul>
         );

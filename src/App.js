@@ -1,7 +1,9 @@
 
 import './App.css';
+
 import WeatherApp from './components/CurrentWeather.js';
 import ToDoApp from './components/toDoApp';
+import InspirationalPhoto from './components/InspirationalImage';
 import { FaLinkedin } from 'react-icons/fa';
 
 function App() {
@@ -9,11 +11,14 @@ function App() {
   return (
     <div className="App">
          <header>
-           <div className='title'><h1>Lovely Day</h1><p className='title-p'>what are your dreams for today?</p></div>
+           <div className='title'><h1>Lovely Day</h1><p className='title-p'>Day Planner</p></div>
          </header>
         <main className='app-main'>
         <article className='weather-section'>
           <WeatherApp />
+        </article>
+        <article>
+           <InspirationalPhoto /> 
         </article>
         <article className='to-do-app'>
           <ToDoApp />

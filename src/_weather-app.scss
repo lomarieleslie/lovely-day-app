@@ -1,18 +1,8 @@
-.App {
-  text-align: center;
-}
 
-.app-main {
-  background-image: url(./assets/gradienta-zb01fkevaC0-unsplash.jpg);
-  height: 90vh;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .current-weather h2,
 .current-weather p {
-  font-family: "Bebas Neue";
+  font-family: "Caudex";
 }
 
 .weather-app-form {
@@ -24,19 +14,25 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5em;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .weather-app-form input,
-.location-search-button,
 label {
   width: 75%;
   margin: 0 auto;
 }
 
+img.current-weather-element {
+ width: 75px;
+}
+
+
+
 .weather-app-form input[type="text"] {
   font-family: "Montserrat";
-  font-size: 0.8em;
+  background-color: rgba(245, 245, 245, 0.75);
+  border: 1px solid black;
 }
 
 input::placeholder {
@@ -45,45 +41,43 @@ input::placeholder {
 }
 
 .weather-section {
+  padding-right:15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-label {
-  font-family: "Montserrat";
-  text-transform: uppercase;
+.label-for-weather-search {
+  font-family: "Bebas Neue";
+  width: 200px;
 }
 
-.location-search-button {
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: whitesmoke;
-  background-color: black;
-  border: 2px solid transparent;
-  border-radius: 8px;
+.location-search-button{
+  margin-bottom: 20px;
+  font-size: .8em;
+  font-weight: 200;
+  width: 30%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  padding: 5px 5px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+
 }
+
 
 .location-search-button:hover {
   color: black;
   background-color: whitesmoke;
-  border: 2px solid black;
+  border: 1px solid black;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-footer {
-  background-color: black;
-  height: 10vh;
-}
+.location-search-button:hover::after{
+  top: 0px;
+  left: 0px;
 
-.footer-credit,
-.juno-credit {
-  color: whitesmoke;
-  font-family: "Montserrat";
-  text-decoration: none;
-}
-
-.juno-credit {
-  padding-top: 1em;
 }

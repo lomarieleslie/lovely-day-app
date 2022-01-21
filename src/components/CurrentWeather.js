@@ -2,6 +2,7 @@ import axios from 'axios';
 import {useState} from 'react';
 
 
+
 function WeatherApp() {
 
 
@@ -32,17 +33,19 @@ function WeatherApp() {
       }
     }).then((response) => {
       setCurrentWeather(response.data);
-    });
+    }).catch((error) => {
+      console.log(error);
+    })
     event.preventDefault();
     setSearchTerm(userInput);
-    setUserInput('');
+    setUserInput("");
   } 
 
   return (
     <div className="App">
         
      <form className='weather-app-form'onSubmit={handleSubmit}>
-       <label htmlFor="search">Search for your city here:</label>
+       <label className="label-for-weather-search" htmlFor="search">Enter your city here to find the current weather:</label>
        <input type="text" placeholder='Where you at?'id="search" onChange={handleInput} value={userInput} required/>
        <button className="location-search-button">Search</button>
      </form>
