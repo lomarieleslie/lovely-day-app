@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 
-
+// Creating variable to hold Inspirational Image
 const InspirationalPhoto = () => {
 const [photo, setPhoto] = useState([]);
 
-
+// API call to unsplash to get random inspirational image
   useEffect(() => {
     axios({
       url: "https://api.unsplash.com/photos/random",
@@ -27,6 +27,8 @@ const [photo, setPhoto] = useState([]);
 
 
   },[]);
+
+  // Render image 
 
   return (
       <div className="inspirational-image">
