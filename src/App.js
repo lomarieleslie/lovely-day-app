@@ -1,6 +1,7 @@
-
+// Styles
 import './App.css';
 
+// Importing components and assets
 import WeatherApp from './components/CurrentWeather.js';
 import ToDoApp from './components/toDoApp';
 import InspirationalPhoto from './components/InspirationalImage';
