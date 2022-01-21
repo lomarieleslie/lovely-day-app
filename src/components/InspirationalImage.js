@@ -19,7 +19,6 @@ const [photo, setPhoto] = useState([]);
         client_id: "W57PpYfHVnQtbqOYYceME-F10pLEm_rvyHvhyhwC1a8"
       } 
     }).then((response) => {
-      console.log(response);
      setPhoto(response.data.urls.small);
 
     }).catch((error) => {
@@ -32,7 +31,7 @@ const [photo, setPhoto] = useState([]);
   return (
       <div className="inspirational-image">
 
-         <img src={photo} alt='inspirational image' />
+         <img src={photo} alt='you are amazing' />
 
       </div>
   )
