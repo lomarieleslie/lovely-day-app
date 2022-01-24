@@ -3,7 +3,7 @@
 }
 
 .app-main {
-  background-image: url(./assets/gradienta-P7KnvzCYDEQ-unsplash.jpg);
+  background-image: url(../assets/background-image.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 .inspirational-image img {
   padding-top: 20px;
-  width: 95%;
+  width: 90%;
   height: 450px;
   object-fit: cover;
   object-position: center;
@@ -46,8 +46,8 @@ h2 {
 }
 
 footer {
-  background-color: rgb(47, 105, 107);
-  height: 10vh;
+  background-color: black;
+  height: 11vh;
 }
 
 .footer-credit,
