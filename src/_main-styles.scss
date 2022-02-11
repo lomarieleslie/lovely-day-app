@@ -3,10 +3,15 @@
 }
 
 .app-main {
-  background-image: url(./assets/gradienta-P7KnvzCYDEQ-unsplash.jpg);
+  background-image: url(./assets/background-image.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.image-and-weather {
+  display: flex;
+  flex-direction: column;
 }
 
 .inspirational-image img {
@@ -20,7 +25,7 @@
 h1 {
   background-image: url(https://media.giphy.com/media/MBsJ0FR5EvgqvUQwS2/giphy.gif);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 5em;
+  font-size: 4em;
   background-position: center;
   background-size: contain;
   color: transparent;
@@ -46,7 +51,7 @@ h2 {
 }
 
 footer {
-  background-color: rgb(47, 105, 107);
+  background-color: #000;
   height: 10vh;
 }
 

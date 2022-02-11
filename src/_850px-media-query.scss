@@ -3,11 +3,8 @@
     height: 100vh;
   }
 
-  .weather-section {
-    position: absolute;
-    top: 175px;
-    right: 0;
-    padding-right: 10%;
+  .image-and-weather {
+    flex-direction: row-reverse;
   }
 
   .weather-app-form input {
@@ -15,9 +12,7 @@
   }
 
   .to-do-app {
-    position: relative;
-    width: 60%;
-    padding-left: 35px;
+    width: 100%;
   }
 
   .to-do-button-flex {
@@ -37,7 +32,7 @@
   }
 
   .inspirational-image img {
-    width: 80%;
-    height: 400px;
+    width: 70%;
+    height: 360px;
   }
 }

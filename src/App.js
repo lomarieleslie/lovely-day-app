@@ -14,11 +14,11 @@ function App() {
            <div className='title'><h1>Lovely Day</h1><p className='title-p'>Day Planner</p></div>
          </header>
         <main className='app-main'>
-        <article className='weather-section'>
-          <WeatherApp />
-        </article>
-        <article>
+        <article className='image-and-weather'>
            <InspirationalPhoto /> 
+        <div className='weather-section'>
+          <WeatherApp />
+        </div>
         </article>
         <article className='to-do-app'>
           <ToDoApp />
