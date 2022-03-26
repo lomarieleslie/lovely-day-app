@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getDatabase, ref, onValue, push, remove } from "firebase/database";
-import toDoApp from "../firebaseSetup";
+import toDoApp from '../firebaseSetup';
 
 function ToDoApp() {
   // initialize state and variables to hold users dreams for their day as well as input
@@ -54,7 +54,7 @@ function ToDoApp() {
   return (
     <div className="to-do-app-container">
       <form action="submit" onSubmit={handleSubmit}>
-        <label className="to-do-label" htmlFor="newToDo">Make a to-do list:</label>
+        <label className="to-do-label" htmlFor="newToDo">To-Do list:</label>
         <div className="to-do-input-button-flex"> <button className="add-to-do-button">Add To Do</button>
         <input
           className="to-do-input" type="text"

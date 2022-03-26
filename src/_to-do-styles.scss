@@ -1,11 +1,34 @@
 .to-do-app {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
   padding: 50px 0;
   display: flex;
   gap: 25px;
   flex-direction: column;
   overflow-y: scroll;
-  max-height: 300px;
   align-items: center;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.to-do-app::before {
+  content: "";
+  position: absolute;
+  background-image: url("./assets/simon-berger-twukN12EN7c-unsplash.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  margin: -20px;
 }
 
 .to-do-input-button-flex {

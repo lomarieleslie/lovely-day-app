@@ -37,7 +37,6 @@ function WeatherApp() {
       console.log(error);
     })
     event.preventDefault();
-    setSearchTerm(userInput);
     setUserInput("");
   } 
 

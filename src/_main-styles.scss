@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.app-main {
-  background-image: url(./assets/background-image.jpg);
+body {
+  background-image: url(./assets/simon-berger-twukN12EN7c-unsplash.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,14 +23,9 @@
 }
 
 h1 {
-  background-image: url(https://media.giphy.com/media/MBsJ0FR5EvgqvUQwS2/giphy.gif);
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: 4em;
-  background-position: center;
-  background-size: contain;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
+  
 }
 
 h2 {
@@ -39,14 +34,12 @@ h2 {
 }
 
 .title {
-  background-color: black;
-  padding: 10px 0;
-  margin: auto 0;
+  background-color: transparent;
 }
 
 .title-p {
   font-family: "Bebas Neue";
-  color: whitesmoke;
+  color: black;
   letter-spacing: 0.25em;
 }
 

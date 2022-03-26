@@ -5,6 +5,7 @@ import WeatherApp from './components/CurrentWeather.js';
 import ToDoApp from './components/toDoApp';
 import InspirationalPhoto from './components/InspirationalImage';
 import { FaLinkedin } from 'react-icons/fa';
+import GetTodaysDate from './components/TodaysDate';
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
            <div className='title'><h1>Lovely Day</h1><p className='title-p'>Day Planner</p></div>
          </header>
         <main className='app-main'>
+          <div className='todays-date'>
+            <GetTodaysDate />
+          </div>
+          
         <article className='image-and-weather'>
            <InspirationalPhoto /> 
         <div className='weather-section'>
