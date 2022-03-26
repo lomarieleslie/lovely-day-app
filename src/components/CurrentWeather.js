@@ -13,7 +13,6 @@ function WeatherApp() {
   // DECLARED CONSTANT VARIABLES
   const [currentWeather, setCurrentWeather] = useState([]);
   const [userInput, setUserInput] = useState('');
-  const [setSearchTerm] = useState(''); 
 
 
 
