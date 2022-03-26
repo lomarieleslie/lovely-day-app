@@ -2,11 +2,11 @@
 
 .current-weather h2,
 .current-weather p {
-  font-family: "Caudex";
+  font-family: "Bebas Neue";
 }
 
 .weather-app-form {
-  width: 265px;
+  width: 320px;
 }
 
 .weather-app-form {
@@ -33,6 +33,7 @@ img.current-weather-element {
   font-family: "Montserrat";
   background-color: rgba(245, 245, 245, 0.75);
   border: 1px solid black;
+  padding: .2rem;
 }
 
 input::placeholder {
@@ -41,7 +42,7 @@ input::placeholder {
 }
 
 .weather-section {
-  padding-right:15px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,10 +1,34 @@
 .to-do-app {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
   padding: 50px 0;
   display: flex;
   gap: 25px;
   flex-direction: column;
   overflow-y: scroll;
-  max-height: 300px;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.to-do-app::before {
+  content: "";
+  position: absolute;
+  background-image: url("./assets/simon-berger-twukN12EN7c-unsplash.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  margin: -20px;
 }
 
 .to-do-input-button-flex {
@@ -12,6 +36,7 @@
   justify-content: space-around;
   flex-direction: row-reverse;
   margin: 0 auto;
+  gap: 10px;
 }
 
 .to-do-label {
@@ -21,6 +46,7 @@
   font-size: larger;
   letter-spacing: 0.25em;
   padding-bottom: 30px;
+  width: 100%;
 }
 
 .to-do-input {
@@ -54,7 +80,7 @@
   padding-left: 15px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 20px;
   width: 350px;
 }
@@ -69,6 +95,7 @@
   outline: 0;
   border: 1px solid black;
   cursor: pointer;
+  width: 35%
 }
 
 .add-to-do-button:hover {
@@ -77,4 +104,8 @@
   border: 1px solid black;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+}
+
+#newToDo {
+  width: 75%;
 }

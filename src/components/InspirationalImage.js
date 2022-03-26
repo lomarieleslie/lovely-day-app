@@ -31,7 +31,7 @@ const [photo, setPhoto] = useState([]);
   return (
       <div className="inspirational-image">
 
-         <img src={photo} alt='you are amazing' />
+         <img src={photo} alt="you've got this!" />
 
       </div>
   )
